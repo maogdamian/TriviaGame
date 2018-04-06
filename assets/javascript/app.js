@@ -54,7 +54,7 @@ var solsOut = ["Pheonix Feather", "Sirius Black","Beetle","Year 2","Bartimus Cro
         if (i>=11){
 
 
-            var theDisp = "<h1>The Game Is Over!</h1> <br><h3> Correct Answers: " + cAns + "<br> Wrong Answers: " + wAns  + "<br>Unanswered: " + uAns + "</h3";
+            var theDisp = "<h1>Game Over!</h1> <br><h3> Correct Answers: " + cAns + "<br> Wrong Answers: " + wAns  + "<br>Unanswered: " + uAns + "</h3";
             $(".theMsg").html(theDisp).show();
             $(".listedAnsSection").hide();
             $(".theQs").hide();

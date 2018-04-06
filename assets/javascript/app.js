@@ -96,7 +96,7 @@ var cAns;
 var wAns;
 var uAns;
 
-var count; // will keep track of my count, starting with 7 sec
+var count; // will keep track of my count, starting with 10 sec
 var down1; //will store the setInterval and run each second
 var i; //this is the stating index that I will use to index/call each item in the object
 var currentClick; //starting a variable that will store the div information (class, id) that the player clicked on
@@ -113,7 +113,7 @@ function startSetup(){
     wAns = 0;
     uAns = 0;
     i =0;
-    count = 7;
+    count = 10;
     makeQ();
 
 }
@@ -141,7 +141,7 @@ function theTimer(){
         $(".theMsg").hide();
         $(".theQs").hide();
         $(".time").hide()
-        count = 7;
+        count = 10;
         uAns++;
 
         //let the user know time is up. show the correct solution. wait 3 seconds before making the next question with makeQ()
@@ -162,7 +162,7 @@ $(".answerChoices").on("click",function(){
 
 //CheckSol checks the users' seleceted answer choice to the actual aswers. This is done by comparing the clickedOnDIV id to the solution's array "sol"
 function checkSol(){
-    //clear the setInterval function, reset the count to 7, hide your time/display
+    //clear the setInterval function, reset the count to 10, hide your time/display
     clearInterval(down1);
     count = 10;
     $(".time").hide();

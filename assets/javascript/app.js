@@ -164,7 +164,7 @@ $(".answerChoices").on("click",function(){
 function checkSol(){
     //clear the setInterval function, reset the count to 7, hide your time/display
     clearInterval(down1);
-    count = 7;
+    count = 10;
     $(".time").hide();
 
 
